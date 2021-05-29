@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--Pink: hsl(322, 100%, 66%);
+	--Very-Pale-Cyan: hsl(193, 100%, 96%);
+	--Very-Dark-Cyan: hsl(192, 100%, 9%);
+	--Grayish-Blue: hsl(208, 11%, 55%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+h2,
+h3 {
+	font-family: 'Poppins', sans-serif;
+	color: var(--Very-Dark-Cyan);
+}
+
+section p {
+	color: var(--Grayish-Blue);
+}
+
+a {
+	text-decoration: none;
+	color: var(--Very-Dark-Cyan);
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/*
+    Buttons
+*/
+
+.btn {
+	padding: 0.6em 3em;
+	display: inline-block;
+	font-size: 0.8rem;
+}
+
+.btn-ctn {
+	font-size: 0.9rem;
+	font-weight: 700;
+	background: var(--white);
+	padding: 0.4em 1em;
+	border-radius: 100vh;
+	box-shadow: 5px 1px 12px 2px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary {
+	color: var(--white);
+	background: var(--Pink);
+	border-radius: 100vh;
+}
+/*
+    Layout
+*/
+
+.container {
+	max-width: 375px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* general layout */
+
+section img,
+.hero-info-img {
+	margin: 2em 0;
+}
+
+header,
+section {
+	padding: 2em 0;
+}
+
+.grow,
+.flow,
+.users {
+	padding: 2em;
+	border-radius: 10px;
+	box-shadow: 5px 1px 35px -12px rgba(0, 0, 0, 0.27);
+}
+
+.main-flex {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+header {
+	background: url(../images/bg-hero-mobile.svg), var(--Very-Pale-Cyan);
+}
+
+/* navbar */
+
+.logo-img {
+	width: 120px;
+	display: inline;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3em;
+}
+
+/* 
+    hero
+*/
+
+.hero-title {
+	max-width: 20ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-subtitle {
+	max-width: 33ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flow-info-img,
+.grow-info-img,
+.users-info-img {
+	order: -1;
+}
+
+/* 
+    footer
+*/
+
+footer {
+	padding: 3em 0;
+	background: var(--Very-Dark-Cyan);
+	color: var(--white);
+}
+
+footer a {
+	color: var(--white);
+}
