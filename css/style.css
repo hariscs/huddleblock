@@ -15,7 +15,7 @@
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	/* font-size: 18px; */
 }
 
 img {
@@ -29,6 +29,9 @@ h3 {
 	color: var(--Very-Dark-Cyan);
 }
 
+p {
+	line-height: 1.5;
+}
 section p {
 	color: var(--Grayish-Blue);
 }
@@ -50,7 +53,7 @@ li {
 */
 
 .btn {
-	padding: 0.6em 3em;
+	padding: 0.8em 4em;
 	display: inline-block;
 	font-size: 0.8rem;
 }
@@ -68,6 +71,15 @@ li {
 	color: var(--white);
 	background: var(--Pink);
 	border-radius: 100vh;
+	font-size: 0.9rem;
+	margin: 1em 0;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-ctn:hover,
+.btn-ctn:focus {
+	opacity: 0.8;
 }
 /*
     Layout
@@ -96,7 +108,7 @@ section {
 .users {
 	padding: 2em;
 	border-radius: 10px;
-	box-shadow: 5px 1px 35px -12px rgba(0, 0, 0, 0.27);
+	box-shadow: 5px 1px 40px -20px rgba(0, 0, 0, 0.27);
 }
 
 .main-flex {
@@ -146,15 +158,108 @@ header {
 }
 
 /* 
+	section-1
+*/
+
+.section-one {
+	margin-top: 1em;
+}
+
+/* 
+	section three
+*/
+.section-three {
+	margin-bottom: 8em;
+}
+
+/* 
+	section four
+*/
+
+.section-four .container {
+	position: relative;
+}
+
+.ready {
+	position: absolute;
+	top: -80px;
+	right: 0;
+	left: 0;
+	padding: 1em;
+	background: var(--white);
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 5px 1px 35px -20px rgba(0, 0, 0, 0.27);
+}
+
+/* 
     footer
 */
 
 footer {
-	padding: 3em 0;
+	padding: 8em 0 3em;
 	background: var(--Very-Dark-Cyan);
-	color: var(--white);
+	color: var(--Very-Pale-Cyan);
 }
 
 footer a {
 	color: var(--white);
+}
+
+footer li a:hover,
+footer li a:focus {
+	text-decoration: underline;
+}
+/* footer logo */
+.footer-logo {
+	max-width: 150px;
+}
+
+.cols {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+
+.phone {
+	margin: -10px 0;
+}
+
+.cols-info {
+	max-width: 32ch;
+}
+
+/* links */
+.col-2 li,
+.col-3 li {
+	margin: 1em 0;
+}
+
+/* col-4 */
+
+.col-4 {
+	margin: 4em 0 1.5em;
+	text-align: center;
+}
+
+.col-4 a {
+	margin: 0 0.3em;
+}
+
+/* icons */
+.fab {
+	padding: 0.5em;
+	border: 1px solid var(--white);
+	border-radius: 100vh;
+}
+
+.fab:hover,
+.fab:focus {
+	color: var(--Pink);
+	border-color: var(--Pink);
+}
+
+.footer-text {
+	text-align: center;
+	font-size: 0.8rem;
 }
