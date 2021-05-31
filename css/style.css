@@ -53,7 +53,7 @@ li {
 */
 
 .btn {
-	padding: 0.8em 4em;
+	padding: 0.8em 3.5em;
 	display: inline-block;
 	font-size: 0.8rem;
 }
@@ -100,7 +100,7 @@ section img,
 
 header,
 section {
-	padding: 2em 0;
+	padding: 1.8em 0;
 }
 
 .grow,
@@ -186,6 +186,8 @@ header {
 	right: 0;
 	left: 0;
 	padding: 1em;
+	max-width: 500px;
+	margin: auto;
 	background: var(--white);
 	text-align: center;
 	border-radius: 10px;
@@ -262,4 +264,70 @@ footer li a:focus {
 .footer-text {
 	text-align: center;
 	font-size: 0.8rem;
+}
+
+/* media query */
+@media (min-width: 650px) {
+	.container {
+		max-width: 1440px;
+	}
+	.main-flex {
+		flex-direction: row;
+		align-items: center;
+		gap: 2em;
+		text-align: left;
+	}
+
+	.main-flex > * {
+		width: 100%;
+	}
+
+	.hero-title {
+		max-width: 20ch;
+		margin-left: 0;
+		font-size: 2rem;
+	}
+
+	.hero-subtitle {
+		margin-left: 0;
+		max-width: 50ch;
+	}
+
+	/* section 3 */
+
+	.grow-info-img,
+	.users-info-img {
+		order: 0;
+	}
+	.grow-subtitle,
+	.flow-subtitle,
+	.users-subtitle {
+		max-width: 50ch;
+	}
+
+	/* footer  */
+
+	.footer-flex {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.col-4 {
+		align-self: start;
+	}
+
+	.footer-text {
+		text-align: right;
+	}
+
+	.footer-logo {
+		max-width: 200px;
+		margin-bottom: 1em;
+	}
+
+	.cols-info {
+		max-width: 40ch;
+	}
 }
